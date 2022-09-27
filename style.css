@@ -46,6 +46,17 @@ button {
     cursor: pointer;
 }
 
+.btns .btn {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background: rgb(95, 92, 136);
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
 @media (max-width:475px) {
     button {
         font-size: 16px;
