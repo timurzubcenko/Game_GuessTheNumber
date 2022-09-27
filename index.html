@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background: rgb(42, 43, 58);
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container h3 {
+            line-height: 30px;
+        }
+
+        .input {
+            display: flex;
+            gap: 20px;
+        }
+
+        #input {
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+            background: transparent;
+            color: white;
+            width: 100%;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 20px;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            background: rgb(95, 92, 136);
+            box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+
+        @media (max-width:475px) {
+            button {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+    </style>
+
+
+    <div class="container">
+        <h3>Угадай число от 0 до 100! <br> За 5 попыток</h3>
+        <div class="input">
+            <input id="input" type="text">
+            <button>Угадать!</button>
+        </div>
+        <p></p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
