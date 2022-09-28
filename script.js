@@ -19,14 +19,14 @@ btns.addEventListener('click', restart)
 
 function LowHight() {
     if (input.value > number) {
-        p.innerText = 'Число меньше'
+        p.innerText = `Число меньше чем: ${input.value}`
         tries++
     }
     else if (input.value === '') {
         p.innerText = 'Input пуст'
     }
     else if (Number(input.value) < number) {
-        p.innerText = 'Число больше'
+        p.innerText = `Число больше чем: ${input.value}`
         tries++
     }
     else if (Number(input.value) == number) {
